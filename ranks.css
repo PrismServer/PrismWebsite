@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.rank {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.rank:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.rank-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.rank-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rank-description {
+    flex-grow: 1;
+}
+
+.rank-description h2 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.rank-description p {
+    margin: 0;
+    color: #555;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .rank {
+        flex-direction: column;
+        text-align: center;
+    }
+    .rank-logo {
+        margin: 0 auto 10px;
+    }
+}
+
+/* Optional: Fade-in animation for the images */
+.rank-logo img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.rank:hover .rank-logo img {
+    opacity: 1;
+}

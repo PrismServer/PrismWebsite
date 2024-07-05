@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrismPeak Server VIP Ranks</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PrismPeak Server VIP Ranks</h1>
+
+        <div class="rank">
+            <h2>VIP Gold</h2>
+            <ul>
+                <li>100PHP GOLD VIP</li>
+                <li>Angel Chest Access</li>
+                <li>Full Set of Diamond Armor and Tools</li>
+                <li>5000 Ingame Money</li>
+                <li>Customizable player title</li>
+            </ul>
+            <button class="buy-btn" onclick="buyRank('VIP Gold')">Buy VIP Gold</button>
+        </div>
+
+        <div class="rank">
+            <h2>VIP Diamond</h2>
+            <ul>
+                <li>250PHP DIAMOND VIP</li>
+                <li>Keep Inventory Access</li>
+                <li>Full Set of Diamond Armor and Tools with enchants</li>
+                <li>10000 Ingame Money</li>
+                <li>Unique in-game mounts and pets</li>
+            </ul>
+            <button class="buy-btn" onclick="buyRank('VIP Diamond')">Buy VIP Diamond</button>
+        </div>
+    </div>
+
+    <div id="userResponse" class="userResponse">
+        <p id="userResponse-message"></p>
+        <button onclick="closeUserResponse()">Close</button>
+    </div>
+
+    <script src="buy.js"></script>
+</body>
+</html>
